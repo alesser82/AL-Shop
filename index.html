@@ -9,7 +9,7 @@
     <meta property="og:title" content="Alesser Portfolio">
     <meta property="og:description"
         content="An Alesser web developer portfolio website. Featuring works that have been created by Alesser. Besides that, it displays a list of abilities Alesser already has.">
-    <meta property="og:url" content="https://alesser82.github.io/">
+    <meta property="og:url" content="https://alesser82.github.io/AL-Shop">
     <meta property="og:image" content="./favicon/mstile-310x310.png">
     <meta property="og:image:width" content="310" />
     <meta property="og:image:height" content="310" />
@@ -46,43 +46,27 @@
     <!-- Header -->
     <header>
         <!-- Top Header -->
-        <div class="container py-2 top-header">
+        <div class="container top-header">
             <div class="row align-items-center">
-                <div class="col-7 col-md-4">
+                <div class="col-12 mb-0 my-2 mb-md-1 col-md-4">
                     <a href="#" class="text-decoration-none">
-                        <table class="table border-0 my-0">
-                            <tr>
-                                <td class="border-0" width="15">
-                                    <i class="fas fa-headphones text-primary"></i>
-                                </td>
-                                <td class="border-0">
-                                    <p class="text-dark d-inline">
-                                        +62 82284738332
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
+                        <i class="fas fa-headphones text-primary"></i>
+                        <p class="text-dark d-inline">
+                            +62 82284738332
+                        </p>
                     </a>
                 </div>
     
-                <div class="col-7 col-md-4 text-left">
+                <div class="col-12 my-2 col-md-4 text-left">
                     <a href="#" class="text-decoration-none">
-                        <table class="table border-0 my-0">
-                            <tr>
-                                <td class="border-0" width="15">
-                                    <i class="fas fa-envelope text-primary"></i>
-                                </td>
-                                <td class="border-0">
-                                    <p class="text-dark d-inline">
-                                        alshop@business.com
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
+                        <i class="fas fa-envelope text-primary"></i>
+                        <p class="text-dark d-inline">
+                            alshop@example.com
+                        </p>
                     </a>
                 </div>
     
-                <div class="col-12 col-md-4 text-end">
+                <div class="col-12 col-md-4 text-end d-none d-md-block">
                     <a href="login.html" class="text-decoration-none">
                         <i class="fas fa-sign-in-alt text-primary"></i>
                         <p class="text-dark d-inline">
@@ -94,37 +78,19 @@
         </div>
 
         <!-- Bottom Header -->
-        <div class="border-top border-bottom py-2">
+        <div class="border-top border-bottom py-2 bottom-header">
             <div class="container">
-                <div class="row align-items-center position-relative">
-                    <!-- Mobile Search Bar -->
-                    <div class="col-12 position-absolute px-3 d-none" id="mobile-search-bar">
-                        <form class="row align-items-center">
-                            <select name="kategori" id="kategori-search" class="form-control d-none">
-                                <option value="">Semua Kategori</option>
-                                <option value="kategori-1">Kategori 1</option>
-                                <option value="kategori-2">Kategori 2</option>
-                            </select>
-                            <div class="col-10 px-0">
-                                <input type="text" class="form-control" name="keyword" id="keyword-search" placeholder="Cari Produk...">
-                            </div>
-                            <div class="col-2 px-0">
-                                <button class="btn btn-primary">
-                                    Cari
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="row align-items-center mx-auto">
 
                     <!-- Logo -->
-                    <div class="col-2 text-center">
-                        <img src="./assets/images/logo.svg" alt="Logo" width="60">
+                    <div class="col-3 col-md-2 text-center">
+                        <img src="./assets/images/logo.svg" alt="Logo">
                     </div>
 
-                    <!-- Search Bar -->
+                    <!-- Big Search Bar -->
                     <div class="col-7 d-none d-md-block">
-                        <div class="row align-items-center">
-                            <div class="col-4 px-0">
+                        <form class="row align-items-center">
+                            <div class="col px-0">
                                 <select name="kategori" id="kategori-search" class="form-control form-select">
                                     <option value="">Semua Kategori</option>
                                     <option value="kategori-1">Kategori 1</option>
@@ -132,29 +98,49 @@
                                 </select>
                             </div>
                             <div class="col-6 px-0">
-                                <input type="text" class="form-control" name="keyword" id="keyword-search" placeholder="Cari Produk...">
+                                <input type="text" 
+                                    class="form-control" 
+                                    name="keyword" 
+                                    id="keyword-search" 
+                                    placeholder="Nama atau Atribut Produk">
                             </div>
-                            <div class="col-2 px-0">
+                            <div class="col-auto px-0">
                                 <button class="btn btn-primary">
-                                    Cari
+                                    <i class="fas fa-search"></i>
+                                    <span class="d-none d-lg-inline">
+                                        Cari
+                                    </span>
                                 </button>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+
+                    <!-- Mobile Search Bar -->
+                    <div class="col-6 d-block d-md-none">
+                        <form class="row align-items-center">
+                            <div class="col px-0">
+                                <input type="text" 
+                                    class="form-control form-control-sm" 
+                                    name="keyword" 
+                                    id="keyword-search" 
+                                    placeholder="Cari Produk...">
+                            </div>
+                            <div class="col-auto px-0">
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
 
                     <!-- Shoping Menu -->
-                    <div class="col-10 col-md-3 text-end row justify-content-end align-content-center">
-                        <a href="#" class="btn col-auto px-0 d-md-none" id="mobile-search-btn">
-                            <span class="d-inline">
-                                <i class="fas fa-search mx-1"></i>
-                            </span>
-                        </a>
-                        <a href="#" class="btn col-auto" id="wishlist-btn">
+                    <div class="col-3 text-end row justify-content-end align-content-center">
+                        <a href="wishlist.html" class="btn col-12 col-md-auto text-end text-md-start px-0 px-md-2" id="wishlist-btn">
                             <span class="d-none d-lg-inline">
                                 Wishlist
                             </span>
                             <span class="d-inline">
-                                <i class="fas fa-heart mx-1"></i>
+                                <i class="fas fa-heart mx-0 mx-1"></i>
                             </span>
                             <!-- If valued -->
                             <!-- <span class="bg-primary text-white badge d-inline">
@@ -163,7 +149,7 @@
                             </span> -->
                             <!-- Endif -->
                         </a>
-                        <a href="#" class="btn col-auto px-0 text-end" id="cart-btn">
+                        <a href="cart.html" class="btn col-auto px-0 text-end d-none d-md-inline" id="cart-btn">
                             <span class="d-none d-lg-inline">
                                 Keranjang
                             </span>
@@ -177,11 +163,6 @@
                             </span> -->
                             <!-- Endif -->
                         </a>
-                        <a href="#" class="btn col-auto d-md-none" id="mobile-search-btn">
-                            <span class="d-inline">
-                                <i class="fas fa-bars mx-1"></i>
-                            </span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -190,10 +171,10 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="bg-dark d-lg-block d-none">
+    <nav class="bg-dark">
         <div class="container px-0">
             <div class="row mx-0">
-                <div class="col-3 category-menu px-0 d-none d-lg-block position-relative">
+                <div class="col-3 category-menu px-0 d-none d-md-block position-relative">
                     <button type="button"
                         class="my-0 py-3 d-block text-decoration-none text-white category-btn btn btn-primary w-100 text-start">
                         <i class="fas fa-bars mx-1"></i>
@@ -215,39 +196,37 @@
                     </div>
                 </div>
                 <div class="col-1 d-none d-lg-block"></div>
-                <div class="col-12 col-lg-8 mx-auto mx-lg-0 px-0 px-lg-2">
-                    <div class="row justify-content-center mx-0">
-                        <div class="col-12 col-lg-auto px-0">
+                <div class="col-12 col-md-9 col-lg-8 mx-auto mx-lg-0 px-0 px-lg-2">
+                    <div class="row justify-content-end mx-0">
+                        <div class="col-auto col-md-auto px-0">
                             <a href="index.html" class="btn btn-primary py-3">
                                 Beranda
                             </a>
                         </div>
-                        <div class="col-12 col-lg-auto px-0">
+                        <div class="col-auto col-md-auto px-0">
                             <a href="product.html" class="btn text-white py-3">
                                 Produk
                             </a>
                         </div>
-                        <div class="col-12 col-lg-auto px-0">
+                        <div class="d-none d-md-block col-md-auto px-0">
                             <a href="about.html" class="btn text-white py-3">
                                 Tentang Kami
                             </a>
                         </div>
-                        <div class="col-12 col-lg-auto px-0">
+                        <div class="d-none d-md-block col-md-auto px-0">
                             <a href="contact.html" class="btn text-white py-3">
                                 Kontak Kami
                             </a>
                         </div>
-                        <div class="col-12 col-lg-auto px-0 d-lg-none">
-                            <div class="dropdown btn-group dropend">
-                                <button class="btn text-white dropdown-toggle" type="button" id="mobile-category-menu" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Kategori
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="mobile-category-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                        <div class="col-auto col-md-auto px-0">
+                            <a href="cart.html" class="btn text-white py-3">
+                                Keranjang
+                            </a>
+                        </div>
+                        <div class="col-auto col-md-auto px-0">
+                            <a href="login.html" class="btn text-white py-3">
+                                Akun
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -869,8 +848,8 @@
                         Kunjungi Kami
                     </h2>
                     <p class="my-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <p class="my-0">alshop@business.com</p>
-                    <p class="my-0">+62 83938782</p>
+                    <p class="my-0">alshop@example.com</p>
+                    <p class="my-0">+62 82284738332</p>
                 </div>
             </div>
 
