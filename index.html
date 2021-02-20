@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Alesser Portfolio">
+    <meta property="og:title" content="Alesser Portfolio">
+    <meta property="og:description"
+        content="An Alesser web developer portfolio website. Featuring works that have been created by Alesser. Besides that, it displays a list of abilities Alesser already has.">
+    <meta property="og:url" content="https://alesser82.github.io/">
+    <meta property="og:image" content="./favicon/mstile-310x310.png">
+    <meta property="og:image:width" content="310" />
+    <meta property="og:image:height" content="310" />
+    <meta property="og:type" content="website">
+    <title>AL Shop - Sebuah Portofolio Aplikasi ECommerce</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="AL Shop"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/favicon/mstile-310x310.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/css/main.min.css">
+    <link rel="preload" as="style" href="./vendor/fontawesome-free-5/css/all.min.css" onload="this.rel='stylesheet'">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Header -->
+        <div class="container py-2 top-header">
+            <div class="row align-items-center">
+                <div class="col-7 col-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <table class="table border-0 my-0">
+                            <tr>
+                                <td class="border-0" width="15">
+                                    <i class="fas fa-headphones text-primary"></i>
+                                </td>
+                                <td class="border-0">
+                                    <p class="text-dark d-inline">
+                                        +62 82284738332
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+    
+                <div class="col-7 col-md-4 text-left">
+                    <a href="#" class="text-decoration-none">
+                        <table class="table border-0 my-0">
+                            <tr>
+                                <td class="border-0" width="15">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </td>
+                                <td class="border-0">
+                                    <p class="text-dark d-inline">
+                                        alshop@business.com
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+    
+                <div class="col-12 col-md-4 text-end">
+                    <a href="login.html" class="text-decoration-none">
+                        <i class="fas fa-sign-in-alt text-primary"></i>
+                        <p class="text-dark d-inline">
+                            Masuk/Daftar
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Header -->
+        <div class="border-top border-bottom py-2">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <!-- Mobile Search Bar -->
+                    <div class="col-12 position-absolute px-3 d-none" id="mobile-search-bar">
+                        <form class="row align-items-center">
+                            <select name="kategori" id="kategori-search" class="form-control d-none">
+                                <option value="">Semua Kategori</option>
+                                <option value="kategori-1">Kategori 1</option>
+                                <option value="kategori-2">Kategori 2</option>
+                            </select>
+                            <div class="col-10 px-0">
+                                <input type="text" class="form-control" name="keyword" id="keyword-search" placeholder="Cari Produk...">
+                            </div>
+                            <div class="col-2 px-0">
+                                <button class="btn btn-primary">
+                                    Cari
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="col-2 text-center">
+                        <img src="./assets/images/logo.svg" alt="Logo" width="60">
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="col-7 d-none d-md-block">
+                        <div class="row align-items-center">
+                            <div class="col-4 px-0">
+                                <select name="kategori" id="kategori-search" class="form-control form-select">
+                                    <option value="">Semua Kategori</option>
+                                    <option value="kategori-1">Kategori 1</option>
+                                    <option value="kategori-2">Kategori 2</option>
+                                </select>
+                            </div>
+                            <div class="col-6 px-0">
+                                <input type="text" class="form-control" name="keyword" id="keyword-search" placeholder="Cari Produk...">
+                            </div>
+                            <div class="col-2 px-0">
+                                <button class="btn btn-primary">
+                                    Cari
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shoping Menu -->
+                    <div class="col-10 col-md-3 text-end row justify-content-end align-content-center">
+                        <a href="#" class="btn col-auto px-0 d-md-none" id="mobile-search-btn">
+                            <span class="d-inline">
+                                <i class="fas fa-search mx-1"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="btn col-auto" id="wishlist-btn">
+                            <span class="d-none d-lg-inline">
+                                Wishlist
+                            </span>
+                            <span class="d-inline">
+                                <i class="fas fa-heart mx-1"></i>
+                            </span>
+                            <!-- If valued -->
+                            <!-- <span class="bg-primary text-white badge d-inline">
+                                <i class="fas fa-heart mx-1"></i>
+                                30
+                            </span> -->
+                            <!-- Endif -->
+                        </a>
+                        <a href="#" class="btn col-auto px-0 text-end" id="cart-btn">
+                            <span class="d-none d-lg-inline">
+                                Keranjang
+                            </span>
+                            <span class="d-inline">
+                                <i class="fas fa-shopping-cart mx-1"></i>
+                            </span>
+                            <!-- If valued -->
+                            <!-- <span class="bg-primary text-white badge d-inline">
+                                <i class="fas fa-shopping-cart mx-1"></i>
+                                101
+                            </span> -->
+                            <!-- Endif -->
+                        </a>
+                        <a href="#" class="btn col-auto d-md-none" id="mobile-search-btn">
+                            <span class="d-inline">
+                                <i class="fas fa-bars mx-1"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Navbar -->
+    <nav class="bg-dark d-lg-block d-none">
+        <div class="container px-0">
+            <div class="row mx-0">
+                <div class="col-3 category-menu px-0 d-none d-lg-block position-relative">
+                    <button type="button"
+                        class="my-0 py-3 d-block text-decoration-none text-white category-btn btn btn-primary w-100 text-start">
+                        <i class="fas fa-bars mx-1"></i>
+                        Kategori
+                    </button>
+                    <div class="position-absolute border-primary row w-100 bg-white border d-none">
+                        <div class="col-12 px-0">
+                            <a href="product/index.html" class="text-decoration-none d-block px-2 border-bottom border-secondary text-dark py-3">Lorem Ipsum</a>
+                        </div>
+                        <div class="col-12 px-0">
+                            <a href="product/index.html" class="text-decoration-none d-block px-2 border-bottom border-secondary text-dark py-3">Lorem Ipsum</a>
+                        </div>
+                        <div class="col-12 px-0">
+                            <a href="product/index.html" class="text-decoration-none d-block px-2 border-bottom border-secondary text-dark py-3">Lorem Ipsum</a>
+                        </div>
+                        <div class="col-12 px-0">
+                            <a href="product/index.html" class="text-decoration-none d-block px-2 border-bottom border-secondary text-dark py-3">Lorem Ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-12 col-lg-8 mx-auto mx-lg-0 px-0 px-lg-2">
+                    <div class="row justify-content-center mx-0">
+                        <div class="col-12 col-lg-auto px-0">
+                            <a href="index.html" class="btn btn-primary py-3">
+                                Beranda
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-auto px-0">
+                            <a href="product.html" class="btn text-white py-3">
+                                Produk
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-auto px-0">
+                            <a href="about.html" class="btn text-white py-3">
+                                Tentang Kami
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-auto px-0">
+                            <a href="contact.html" class="btn text-white py-3">
+                                Kontak Kami
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-auto px-0 d-lg-none">
+                            <div class="dropdown btn-group dropend">
+                                <button class="btn text-white dropdown-toggle" type="button" id="mobile-category-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kategori
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="mobile-category-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/1900x700.png?text=Image+1" class="d-block w-100" alt="Slider">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/1900x700.png?text=Image+2" class="d-block w-100" alt="Slider">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="https://via.placeholder.com/1900x700.png?text=Image+3" class="d-block w-100" alt="Slider">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Popular Item -->
+    <section class="container mt-5">
+
+        <h2 class="text-center">Produk Terpopuler</h2>
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+1" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+2" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+3" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+4" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- New Item -->
+    <section class="container mt-5">
+
+        <h2 class="text-center">Produk Terbaru</h2>
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+1" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+2" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+3" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+4" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular Category -->
+    <section class="container mt-5">
+
+        <h2 class="text-center">Kategori Terpopuler</h2>
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+1" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+2" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+3" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 position-relative">
+                <div class="card item">
+                    <div class="card-header bg-white border-0 position-relative">
+                        <div class="row position-absolute w-100 justify-content-between bg-white mx-auto">
+                            <div class="col-auto">
+                                <button type="button" 
+                                    class="btn add-to-cart">
+                                    <i class="fas fa-plus fa-sm"></i>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row justify-content-end px-2">
+                                    <div class="col-auto px-1">
+                                        <a href="#" class="btn px-1">
+                                            <i class="far fa-eye"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto px-1">
+                                        <button class="btn add-to-wishlist px-1"
+                                            type="button">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="product/product-detail.html">
+                            <img src="https://via.placeholder.com/550x750.png?text=Product+4" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <div class="card-body border-0 px-4">
+                        <a href="product/product-detail.html" 
+                            class="btn border-0 text-start py-0 px-0">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                        </a>
+                        <p class="card-text">Rp20.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark py-3 mt-5">
+        <div class="container mt-3">
+            <div class="row my-5">
+                <div class="col-md-7 col-lg-4">
+                    <img src="./assets/images/logo.svg" alt="Logo" width="50">
+                    <p class="text-white mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas maxime mollitia repellendus dolorum. Culpa perspiciatis dolorum eligendi fuga corrupti?</p>
+                </div>
+                <div class="col-md-5 col-lg-2 text-white">
+                    <h2 class="mb-3">
+                        Informasi
+                    </h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="about.html" 
+                                class="text-white text-decoration-none">
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="terms-and-condition.html" 
+                                class="text-white text-decoration-none">
+                                Syarat dan Ketentuan
+                            </a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="terms-and-condition.html" 
+                                class="text-white text-decoration-none">
+                                Kontak Kami
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-7 col-lg-3 text-white">
+                    <h2 class="mb-3">
+                        Layanan Pelanggan
+                    </h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="payment-methods.html" 
+                                class="text-white text-decoration-none">
+                                Cara Pembayaran
+                            </a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="privacy-policy.html" 
+                                class="text-white text-decoration-none">
+                                Kebijakan Privasi
+                            </a>
+                        </li>
+                        <li class="list-group-item bg-dark border-0 px-0 py-1">
+                            <a href="return.html" 
+                                class="text-white text-decoration-none">
+                                Pengembalian
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 col-lg-3 text-white">
+                    <h2 class="mb-3">
+                        Kunjungi Kami
+                    </h2>
+                    <p class="my-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p class="my-0">alshop@business.com</p>
+                    <p class="my-0">+62 83938782</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 border-top border-white">
+                <div class="col-12 text-center py-2">
+                    <p class="m-0 text-white">
+                        Copyright ©2021 ALShop - All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="./vendor/bootstrap-5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

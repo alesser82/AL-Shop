@@ -1,0 +1,26 @@
+nav {
+    .container {
+        .row {
+            .category-menu {
+                &:hover {
+                    .position-absolute {
+                        z-index: 100;
+                        margin: auto;
+                        display: flex !important;
+                    }
+                }
+
+                .position-absolute {
+                    .col-12 {
+                        &:hover {
+                            a {
+                                color: #0d6efd !important;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

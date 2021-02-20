@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Poppins-BlackItalic';
+    src: url('../../../vendor/Poppins/Poppins-BlackItalic.ttf'); /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-BlackItalic.ttf') format('truetype'), /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-BlackItalic.ttf') format('truetype'), /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-BlackItalic.ttf') format('truetype'), /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-BlackItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-BlackItalic.ttf') format('truetype');
+       /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../../../vendor/Poppins/Poppins.ttf-Black'); /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype');
+       /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('../../../vendor/Poppins/Poppins-Black.ttf'); /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Black.ttf') format('truetype');
+       /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../../../vendor/Poppins/Poppins-Bold.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Bold.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Bold.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Bold.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Bold.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url('../../../vendor/Poppins/Poppins-BoldItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-BoldItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-BoldItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../../../vendor/Poppins/Poppins-ExtraBold.ttf'); /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-ExtraBold.ttf') format('truetype'), /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-ExtraBold.ttf') format('truetype'), /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraBold.ttf') format('truetype'), /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+       /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('../../../vendor/Poppins/Poppins-ExtraLight.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraLight.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraLightItalic';
+    src: url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url('../../../vendor/Poppins/Poppins-Italic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Italic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Italic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Italic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Italic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Italic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-LightItalic';
+    src: url('../../../vendor/Poppins/Poppins-LightItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-LightItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-LightItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../../../vendor/Poppins/Poppins-Medium.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Medium.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Medium.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Medium.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Medium.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Medium.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-MediumItalic';
+    src: url('../../../vendor/Poppins/Poppins-MediumItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-MediumItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../../vendor/Poppins/Poppins-Regular.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Regular.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Regular.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Regular.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Regular.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../../../vendor/Poppins/Poppins-SemiBold.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../../../vendor/Poppins/Poppins-SemiBold.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBoldItalic';
+    src: url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url('../../../vendor/Poppins/Poppins-Thin.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-Thin.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-Thin.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Thin.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-Thin.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-Thin.ttf') format('truetype');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Poppins-ThinItalic';
+    src: url('../../../vendor/Poppins/Poppins-ThinItalic.ttf');
+    /* IE9 Compat Modes */
+    src: url('../../../vendor/Poppins/Poppins-ThinItalic.ttf') format('truetype'),
+        /* IE6-IE8 */
+        url('../../../vendor/Poppins/Poppins-ThinItalic.ttf') format('truetype'),
+        /* Super Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ThinItalic.ttf') format('truetype'),
+        /* Pretty Modern Browsers */
+        url('../../../vendor/Poppins/Poppins-ThinItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../../vendor/Poppins/Poppins-ThinItalic.ttf') format('truetype');
+    /* Legacy iOS */
+}

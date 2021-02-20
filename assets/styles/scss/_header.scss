@@ -1,0 +1,14 @@
+@media only screen and (max-width: 750px) {
+    .top-header {
+        .row {
+            .col-12 {
+                position: absolute;
+            }
+        }
+    }
+}
+
+#mobile-search-bar {
+    bottom: -41px;
+    z-index: 1000;
+}
