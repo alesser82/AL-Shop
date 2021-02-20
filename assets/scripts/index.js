@@ -1,0 +1,1 @@
+const toTopButton = new ToTopButton;

@@ -175,6 +175,10 @@
     width: 100vw;
     z-index: 100;
   }
+  nav .container .row .col-12 .row a.py-3 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+  }
 }
 
 nav .container .row .category-menu:hover .position-absolute {
@@ -212,6 +216,12 @@ nav .container .row .category-menu .position-absolute .col-12:hover a {
 
 footer h2, footer .h2 {
   font-size: 1.5rem;
+}
+
+.to-top-btn {
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
 }
 
 /*!

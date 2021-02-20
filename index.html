@@ -198,34 +198,54 @@
                 <div class="col-1 d-none d-lg-block"></div>
                 <div class="col-12 col-md-9 col-lg-8 mx-auto mx-lg-0 px-0 px-lg-2">
                     <div class="row justify-content-end mx-0">
-                        <div class="col-auto col-md-auto px-0">
+                        <div class="col-3 text-center col-md-auto px-0">
                             <a href="index.html" class="btn btn-primary py-3">
-                                Beranda
+                                <div class="text-center d-md-none w-100">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="text-center d-md-inline w-100">
+                                    Beranda
+                                </div>
                             </a>
                         </div>
-                        <div class="col-auto col-md-auto px-0">
-                            <a href="product.html" class="btn text-white py-3">
-                                Produk
+                        <div class="col-3 text-center col-md-auto px-0">
+                            <a href="product/index.html" class="btn text-white py-3">
+                                <div class="text-center d-md-none w-100">
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                <div class="text-center d-md-inline w-100">
+                                    Produk
+                                </div>
                             </a>
                         </div>
-                        <div class="d-none d-md-block col-md-auto px-0">
+                        <div class="d-none d-md-block text-center col-md-auto px-0">
                             <a href="about.html" class="btn text-white py-3">
                                 Tentang Kami
                             </a>
                         </div>
-                        <div class="d-none d-md-block col-md-auto px-0">
+                        <div class="d-none d-md-block text-center col-md-auto px-0">
                             <a href="contact.html" class="btn text-white py-3">
                                 Kontak Kami
                             </a>
                         </div>
-                        <div class="col-auto col-md-auto px-0">
+                        <div class="col-3 text-center d-md-none px-0">
                             <a href="cart.html" class="btn text-white py-3">
-                                Keranjang
+                                <div class="text-center d-md-none w-100">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="text-center d-md-inline w-100">
+                                    Keranjang
+                                </div>
                             </a>
                         </div>
-                        <div class="col-auto col-md-auto px-0">
+                        <div class="col-3 text-center d-md-none px-0">
                             <a href="login.html" class="btn text-white py-3">
-                                Akun
+                                <div class="text-center d-md-none w-100">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="text-center d-md-inline w-100">
+                                    Akun
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -862,8 +882,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="position-fixed to-top-btn d-none d-md-block">
+        <button type="button" 
+            class="btn btn-secondary rounded-circle">
+                <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
     
     <!-- Scripts -->
-    <script src="./vendor/bootstrap-5/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./vendor/bootstrap-5/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/scripts/components/to-top-button.js"></script>
+    <script defer src="./assets/scripts/index.js"></script>
 </body>
 </html>
