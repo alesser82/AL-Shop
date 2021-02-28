@@ -1,31 +1,23 @@
-@media only screen and (max-width: 750px) {
-    .bottom-header {
-        .container {
-            .row {
-                .col-3 {
-                    img {
-                        max-width: 50px;
-                    }
+header {
+    img {
+        max-height: 45px;
+    }
+
+    form {
+        .row {
+            height: 50px;
+
+            input {
+                &:focus {
+                    box-shadow: none;
                 }
             }
         }
     }
-}
 
-#mobile-search-bar {
-    bottom: -41px;
-    z-index: 1000;
-}
-
-.bottom-header {
-    .container {
-        .row {
-            .col-3 {
-                img {
-                    max-width: 100%;
-                    max-height: 60px;
-                }
-            }
+    .user-menu {
+        a {
+            font-size: 1rem;
         }
     }
 }

@@ -2,13 +2,22 @@ $font-family-sans-serif: Poppins-Regular,
 Arial,
 sans-serif !default;
 
-$font-size-base: .88rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: .875rem !default; // Assumes the browser default, typically `16px`
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: 0 !default;
-$btn-border-radius-sm: 0 !default;
-$btn-border-radius-lg: 0 !default;
+// $btn-border-radius: 0 !default;
+// $btn-border-radius-sm: 0 !default;
+// $btn-border-radius-lg: 0 !default;
 
-$dropdown-border-radius: 0 !default;
+// $dropdown-border-radius: 0 !default;
 
-$input-border-radius: 0 !default;
+// $input-border-radius: 0 !default;

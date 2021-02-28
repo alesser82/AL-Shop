@@ -1,8 +1,10 @@
 @import "font";
 @import "variables";
+
+@import "../../../vendor/bootstrap-4.6.0/scss/bootstrap";
+
 @import "header";
 @import "navbar";
 @import "item";
 @import "footer";
 @import "to-top-button";
-@import "../../../vendor/bootstrap-5/scss/bootstrap.scss";
