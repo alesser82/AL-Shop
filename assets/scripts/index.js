@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    navbar.hideCategoryList();
+
     screenSizeHandler();
 
     searchInput.placeholderHandler();
@@ -9,6 +11,14 @@ $(document).ready(function () {
         screenSizeHandler();
 
         searchInput.placeholderHandler();
+    });
+
+    $('nav button').hover(function () {
+        navbar.displayCategoryList();
+    });
+
+    $('nav button').mouseleave(function () {
+        navbar.hideCategoryList();
     });
 
 });

@@ -9883,6 +9883,11 @@ header .btn:focus {
   }
 }
 
+nav button .position-absolute {
+  left: 0;
+  top: 50px;
+}
+
 .to-top-btn {
   right: 50px;
   bottom: 50px;
