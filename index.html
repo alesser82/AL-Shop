@@ -74,7 +74,7 @@
         <!-- Bottom Header -->
         <div class="container bottom-header">
             <div class="row align-items-center justify-content-between">
-                <div class="col-2 col-lg-3 my-2">
+                <div class="col-3 col-md-2 col-lg-3 my-2">
                     <a href="index.html" class="btn">
                         <img src="./assets/images/logo.svg" alt="Logo">
                     </a>
@@ -88,19 +88,22 @@
                             <button type="submit" 
                                 class="btn btn-primary border-0 rounded-pill h-100 px-5"
                                 id="button-addon2">
-                                Search
+                                <span class="d-none d-md-inline">
+                                    Search
+                                </span>
+                                <i class="fas fa-search d-md-none"></i>
                             </button>
                         </div>
                     </div>
                 </form>
-                <div class="col-auto col-lg-3 my-2 text-right user-menu">
+                <div class="col-auto col-md-2 col-lg-3 my-2 text-right user-menu">
                     <a href="login.html" class="btn d-none d-lg-inline">
                         <i class="fas fa-user"></i>
                     </a>
                     <a href="wishlist.html" class="btn">
                         <i class="fas fa-heart"></i>
                         <span class="badge badge-primary">
-                            100
+                            0
                         </span>
                     </a>
                     <a href="cart.html" class="btn d-none d-lg-inline">
@@ -113,11 +116,25 @@
             </div>
         </div>
     </header>
+
+    <nav class="bg-secondary">
+        <div class="container">
+            <div class="row m-0">
+                <div class="col-auto">
+                    <button type="button" class="btn rounded-0 pr-5 btn-primary">
+                        SHOP BY CATEGORY
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
     
     <!-- Scripts -->
     <script src="./vendor/jQuery-3.5.1/jquery.min.js"></script>
     <script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts/components/to-top-button.js"></script>
+    <script src="./assets/scripts/components/search-input.js"></script>
+    <script src="./assets/scripts/root.js"></script>
     <script src="./assets/scripts/index.js"></script>
 </body>
 </html>
