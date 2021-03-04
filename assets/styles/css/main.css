@@ -9883,9 +9883,63 @@ header .btn:focus {
   }
 }
 
-nav button .position-absolute {
+nav .row .col-auto button h3 {
+  font-size: 1rem;
+}
+
+nav .row .col-auto button .position-absolute {
   left: 0;
-  top: 50px;
+  top: 48px;
+}
+
+nav .row .col-auto button .position-absolute a {
+  transition: .3s;
+}
+
+nav .row .col-auto button .position-absolute a:hover, nav .row .col-auto button .position-absolute a:focus {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .row .col-lg .row .col-auto a.btn {
+  transition: .3s;
+}
+
+nav .row .col-lg .row .col-auto a.btn:hover {
+  color: #adb5bd !important;
+}
+
+nav .row .col-lg .row .col-auto a.btn:focus {
+  box-shadow: unset;
+}
+
+nav .row .col-lg .row .col-auto .active {
+  color: #adb5bd !important;
+}
+
+@media (max-width: 991px) {
+  nav.bg-secondary {
+    background-color: #fff !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  nav.bg-secondary .row.justify-content-end {
+    justify-content: space-between !important;
+  }
+  nav.bg-secondary .row.justify-content-end a {
+    color: #001326 !important;
+    font-size: .8rem;
+  }
+  nav.bg-secondary .row.justify-content-end a.active {
+    color: #007bff !important;
+  }
+  nav.bg-secondary .row.justify-content-end .col-auto {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
 }
 
 .to-top-btn {

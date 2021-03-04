@@ -21,4 +21,9 @@ $(document).ready(function () {
         navbar.hideCategoryList();
     });
 
+    $('.search-btn').click(function (e) {
+        e.preventDefault();
+        navbar.scrollToSearch();
+    })
+
 });

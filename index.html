@@ -43,22 +43,26 @@
     <link rel="stylesheet" href="./assets/styles/css/main.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <!-- Top Header -->
         <div class="bg-light d-none d-lg-block">
             <div class="container d-none d-lg-block bg-light">
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <p class="m-0">
-                            Contact: +62 822298014799
+                        <p class="m-0 d-inline">
+                            <i class="fas fa-phone mr-1"></i>+62 822298014799
+                        </p>
+                        <p class="m-0 d-inline ml-3">
+                            <i class="fas fa-envelope mr-1"></i> alshop@example.com
                         </p>
                     </div>
                     <div class="col-auto row m-0">
                         <a href="#" class="btn">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#" class="btn">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="btn">
                             <i class="fab fa-instagram"></i>
@@ -117,52 +121,83 @@
         </div>
     </header>
 
+    <!-- Navbar -->
     <nav class="bg-secondary">
         <div class="container">
             <div class="row m-0 justify-content-between align-items-center">
-                <div class="col-auto">
+                <div class="col-auto d-none d-lg-block">
                     <button type="button" class="btn rounded-0 pr-5 btn-primary position-relative">
-                        <h5 class="my-2">
+                        <h3 class="my-2">
                             <i class="fas fa-bars mr-1"></i>
                             SHOP BY CATEGORY
-                        </h5>
+                        </h3>
                         <div class="position-absolute bg-white border w-100">
-                            <a href="#" class="btn d-block text-left py-2">
+                            <a href="#" class="btn d-block text-left py-2 rounded-0">
                                 Lorem ipsum dolor
                             </a>
                             <hr class="m-0">
-                            <a href="#" class="btn d-block text-left py-2">
+                            <a href="#" class="btn d-block text-left py-2 rounded-0">
                                 Lorem ipsum dolor
                             </a>
                             <hr class="m-0">
-                            <a href="#" class="btn d-block text-left py-2">
+                            <a href="#" class="btn d-block text-left py-2 rounded-0">
                                 Lorem ipsum dolor
                             </a>
                             <hr class="m-0">
-                            <a href="#" class="btn d-block text-left py-2">
+                            <a href="#" class="btn d-block text-left py-2 rounded-0">
                                 Lorem ipsum dolor
                             </a>
                         </div>
                     </button>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg">
                     <div class="row justify-content-end">
-                        <div class="col-auto">
-                            <a href="index.html" class="btn text-white">
+                        <div class="col-auto d-none d-lg-inline">
+                            <a href="index.html" class="btn text-white active">
                                 Home
                             </a>
                         </div>
                         <div class="col-auto">
-                            <a href="product.html" class="btn text-white">
-                                Product
+                            <a href="shop.html" class="btn text-white">
+                                <div class="d-lg-none">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                Shop
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto d-lg-none">
+                            <a href="cart.html" class="btn text-white cart-btn">
+                                <div>
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="badge badge-primary">
+                                        100
+                                    </span>
+                                </div>
+                                Cart
+                            </a>
+                        </div>
+                        <div class="col-auto d-lg-none">
+                            <a href="login.html" class="btn text-white">
+                                <div>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                Account
+                            </a>
+                        </div>
+                        <div class="col-auto d-lg-none">
+                            <a href="#" class="btn text-white search-btn">
+                                <div>
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                Search
+                            </a>
+                        </div>
+                        <div class="col-auto d-none d-lg-inline">
                             <a href="about.html" class="btn text-white">
                                 About
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-lg-inline">
                             <a href="contact.html" class="btn text-white">
                                 Contact
                             </a>
@@ -172,14 +207,18 @@
             </div>
         </div>
     </nav>
+
+    <main class="min-vh-100">
+        
+    </main>
     
     <!-- Scripts -->
     <script src="./vendor/jQuery-3.5.1/jquery.min.js"></script>
     <script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/root.js"></script>
     <script src="./assets/scripts/components/to-top-button.js"></script>
     <script src="./assets/scripts/components/search-input.js"></script>
     <script src="./assets/scripts/components/navbar.js"></script>
-    <script src="./assets/scripts/root.js"></script>
     <script src="./assets/scripts/index.js"></script>
 </body>
 </html>

@@ -1,10 +1,82 @@
 nav {
-    button {
+    .row {
+        .col-auto {
 
-        .position-absolute {
-            left: 0;
-            top: 50px;
+            button {
+
+                h3 {
+                    font-size: 1rem;
+                }
+    
+                .position-absolute {
+                    left: 0;
+                    top: 48px;
+    
+                    a {
+                        transition: .3s;
+    
+                        &:hover,
+                        &:focus {
+                            box-shadow: none;
+                            background-color: rgba($color: #000000, $alpha: .3);
+                        }
+                    }
+                }
+    
+            }
+    
         }
 
+        .col-lg {
+            .row {
+                .col-auto {
+                    a.btn {
+                        transition: .3s;
+                        
+                        &:hover {
+                            color: $gray-500 !important;
+                        }
+
+                        &:focus {
+                            box-shadow: unset;
+                        }
+                    }
+
+                    .active {
+                        color: $gray-500 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Style
+@media (max-width: 991px) {
+    nav.bg-secondary {
+        background-color: $white !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: $box-shadow-lg;
+
+        .row.justify-content-end {
+            justify-content: space-between !important;
+
+            a {
+                color: $secondary !important;
+                font-size: .8rem;
+            }
+
+            a.active {
+                color: $primary !important;
+            }
+
+            .col-auto {
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+            }
+        }
     }
 }
