@@ -1,6 +1,6 @@
 const searchInput = {
     placeholderHandler: () => {
-        if (widthScreen > 767) {
+        if (root.widthScreen > 767) {
             $('header input').attr('placeholder', 'Type about product ...');
             return;
         }

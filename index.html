@@ -151,7 +151,7 @@
                     </button>
                 </div>
                 <div class="col-12 col-lg">
-                    <div class="row justify-content-end">
+                    <div class="row justify-content-end flex-nowrap">
                         <div class="col-auto d-none d-lg-inline">
                             <a href="index.html" class="btn text-white active">
                                 Home
@@ -163,6 +163,14 @@
                                     <i class="fas fa-store"></i>
                                 </div>
                                 Shop
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="shop.html" class="btn text-white">
+                                <div class="d-lg-none">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                Blog
                             </a>
                         </div>
                         <div class="col-auto d-lg-none">
@@ -208,17 +216,54 @@
         </div>
     </nav>
 
-    <main class="min-vh-100">
-        
+    <!-- Main Pages -->
+    <main>
+        <section class="home-top-slider carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+1" alt="First slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+2" alt="Second slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+3" alt="Third slide">
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </section>
     </main>
     
     <!-- Scripts -->
     <script src="./vendor/jQuery-3.5.1/jquery.min.js"></script>
     <script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/scripts/root.js"></script>
-    <script src="./assets/scripts/components/to-top-button.js"></script>
-    <script src="./assets/scripts/components/search-input.js"></script>
-    <script src="./assets/scripts/components/navbar.js"></script>
+    <script src="./assets/scripts/root/variable.js"></script>
+    <script src="./assets/scripts/root/function.js"></script>
     <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/components/search-input/function.js"></script>
+    <script src="./assets/scripts/components/search-input/event.js"></script>
+    <script src="./assets/scripts/components/navbar/function.js"></script>
+    <script src="./assets/scripts/components/navbar/event.js"></script>
+    <script src="./assets/scripts/pages/index.js"></script>
+    <script src="./assets/scripts/pages/home/top-slider/function.js"></script>
+    <script src="./assets/scripts/pages/home/top-slider/event.js"></script>
 </body>
 </html>

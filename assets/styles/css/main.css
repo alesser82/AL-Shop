@@ -9888,6 +9888,7 @@ nav .row .col-auto button h3 {
 }
 
 nav .row .col-auto button .position-absolute {
+  z-index: 1000;
   left: 0;
   top: 48px;
 }
@@ -9931,7 +9932,7 @@ nav .row .col-lg .row .col-auto .active {
   }
   nav.bg-secondary .row.justify-content-end a {
     color: #001326 !important;
-    font-size: .8rem;
+    font-size: .825rem;
   }
   nav.bg-secondary .row.justify-content-end a.active {
     color: #007bff !important;

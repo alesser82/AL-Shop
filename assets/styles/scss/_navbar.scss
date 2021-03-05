@@ -9,6 +9,7 @@ nav {
                 }
     
                 .position-absolute {
+                    z-index: 1000;
                     left: 0;
                     top: 48px;
     
@@ -66,7 +67,7 @@ nav {
 
             a {
                 color: $secondary !important;
-                font-size: .8rem;
+                font-size: .825rem;
             }
 
             a.active {
