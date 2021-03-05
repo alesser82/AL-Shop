@@ -1,0 +1,37 @@
+@media (min-width: 991px) {
+    .product-card {
+        .row {
+            .position-absolute {
+                background-color: rgba($richBlack, .2);
+                opacity: 0;
+                z-index: 100;
+                transition: .3s;
+            }
+    
+            &:hover {
+                .position-absolute {
+                    opacity: 1;
+                }
+            }
+        }
+    
+        .card-body {
+            .position-absolute {
+                right: 0;
+                top: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.product-card {
+    .row {
+        .position-absolute {
+            background-color: rgba($richBlack, .2);
+            opacity: 0;
+            z-index: 100;
+            transition: .3s;
+        }
+    }
+}

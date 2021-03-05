@@ -151,7 +151,7 @@
                     </button>
                 </div>
                 <div class="col-12 col-lg">
-                    <div class="row justify-content-end flex-nowrap">
+                    <div class="row justify-content-end flex-nowrap align-items-center">
                         <div class="col-auto d-none d-lg-inline">
                             <a href="index.html" class="btn text-white active">
                                 Home
@@ -177,7 +177,7 @@
                             <a href="cart.html" class="btn text-white cart-btn">
                                 <div>
                                     <i class="fas fa-shopping-cart"></i>
-                                    <span class="badge badge-primary">
+                                    <span class="badge badge-primary pb-0">
                                         100
                                     </span>
                                 </div>
@@ -192,14 +192,14 @@
                                 Account
                             </a>
                         </div>
-                        <div class="col-auto d-lg-none">
+                        <!-- <div class="col-auto d-lg-none">
                             <a href="#" class="btn text-white search-btn">
                                 <div>
                                     <i class="fas fa-search"></i>
                                 </div>
                                 Search
                             </a>
-                        </div>
+                        </div> -->
                         <div class="col-auto d-none d-lg-inline">
                             <a href="about.html" class="btn text-white">
                                 About
@@ -216,7 +216,7 @@
         </div>
     </nav>
 
-    <!-- Main Pages -->
+    <!-- Main Content -->
     <main>
         <section class="home-top-slider carousel slide" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators">
@@ -249,6 +249,66 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </section>
+
+        <section class="container home-sale-item mt-4">
+            <h4>Flash Sale</h4>
+            <div class="row">
+                <div class="col-5 col-lg-3">
+                    <div class="card border-0 shadow-none rounded-0 product-card">
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0" 
+                                    src="https://via.placeholder.com/800x800?text=Sale+Product+1"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
+                                <button type="button" class="btn btn-light rounded-pill mx-1">
+                                    <i class="fas fa-eye"></i>
+                                    Detail
+                                </button>
+                                <form action="cart.html">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill mx-1">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card-body p-0 pt-2 position-relative">
+                            <h5 class="card-title">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
+                                </a>
+                            </h5>
+                            <del class="text-secondary">Rp30.000</del>
+                            <p class="card-text text-primary m-0">
+                                Rp20.000
+                            </p>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     

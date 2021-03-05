@@ -9837,12 +9837,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@media (max-width: 767px) {
-  * {
-    font-size: .86rem;
-  }
-}
-
 header img {
   max-height: 45px;
 }
@@ -9926,13 +9920,13 @@ nav .row .col-lg .row .col-auto .active {
     left: 0;
     right: 0;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    overflow: scroll;
   }
   nav.bg-secondary .row.justify-content-end {
     justify-content: space-between !important;
   }
   nav.bg-secondary .row.justify-content-end a {
     color: #001326 !important;
-    font-size: .825rem;
   }
   nav.bg-secondary .row.justify-content-end a.active {
     color: #007bff !important;
@@ -9947,5 +9941,29 @@ nav .row .col-lg .row .col-auto .active {
   right: 50px;
   bottom: 50px;
   z-index: 1000;
+}
+
+@media (min-width: 991px) {
+  .product-card .row .position-absolute {
+    background-color: rgba(0, 19, 38, 0.2);
+    opacity: 0;
+    z-index: 100;
+    transition: .3s;
+  }
+  .product-card .row:hover .position-absolute {
+    opacity: 1;
+  }
+  .product-card .card-body .position-absolute {
+    right: 0;
+    top: 0;
+    padding: 0;
+  }
+}
+
+.product-card .row .position-absolute {
+  background-color: rgba(0, 19, 38, 0.2);
+  opacity: 0;
+  z-index: 100;
+  transition: .3s;
 }
 /*# sourceMappingURL=main.css.map */

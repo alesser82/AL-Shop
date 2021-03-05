@@ -61,13 +61,14 @@ nav {
         left: 0;
         right: 0;
         box-shadow: $box-shadow-lg;
+        overflow: scroll;
 
         .row.justify-content-end {
             justify-content: space-between !important;
 
             a {
                 color: $secondary !important;
-                font-size: .825rem;
+                // font-size: .8rem;
             }
 
             a.active {
