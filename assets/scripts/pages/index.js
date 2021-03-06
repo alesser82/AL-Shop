@@ -3,7 +3,8 @@ let pages = {
     isHome: function () {
 
         let components = {
-            topSlider: $('.home-top-slider')
+            topSlider: $('.home-top-slider'),
+            saleItems: $('.home-sale-item')
         }
 
         $.each(components, function (key, value) {

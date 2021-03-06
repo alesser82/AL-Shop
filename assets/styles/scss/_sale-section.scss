@@ -1,0 +1,29 @@
+.home-sale-item {
+    .flex-nowrap {
+
+        border-color: darken($color: $primary, $amount: 10%) !important;
+        border-width: 2px !important;
+
+        .col-auto {
+            z-index: 100;
+        }
+
+        .col-auto.ml-n2 {
+            left: 0;
+        }
+
+        .col-auto.mr-n2 {
+            right: 0;
+        }
+
+    }
+}
+
+// Mobile Style
+@media (max-width: 991px) { 
+    .home-sale-item {
+        .flex-nowrap.overflow-hidden {
+            overflow: scroll !important;
+        }
+    }   
+}

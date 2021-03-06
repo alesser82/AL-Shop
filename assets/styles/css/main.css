@@ -9943,6 +9943,29 @@ nav .row .col-lg .row .col-auto .active {
   z-index: 1000;
 }
 
+.home-sale-item .flex-nowrap {
+  border-color: #0062cc !important;
+  border-width: 2px !important;
+}
+
+.home-sale-item .flex-nowrap .col-auto {
+  z-index: 100;
+}
+
+.home-sale-item .flex-nowrap .col-auto.ml-n2 {
+  left: 0;
+}
+
+.home-sale-item .flex-nowrap .col-auto.mr-n2 {
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .home-sale-item .flex-nowrap.overflow-hidden {
+    overflow: scroll !important;
+  }
+}
+
 @media (min-width: 991px) {
   .product-card .row .position-absolute {
     background-color: rgba(0, 19, 38, 0.2);
