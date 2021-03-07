@@ -9837,6 +9837,16 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (max-width: 767px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+.fa-phone {
+  transform: scaleX(-1);
+}
+
 header img {
   max-height: 45px;
 }
