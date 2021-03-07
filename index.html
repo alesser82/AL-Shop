@@ -174,6 +174,14 @@
                             </a>
                         </div>
                         <div class="col-auto d-lg-none">
+                            <a href="#" class="btn text-white search-btn">
+                                <div>
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                Search
+                            </a>
+                        </div>
+                        <div class="col-auto d-lg-none">
                             <a href="cart.html" class="btn text-white cart-btn">
                                 <div>
                                     <i class="fas fa-shopping-cart"></i>
@@ -192,14 +200,6 @@
                                 Account
                             </a>
                         </div>
-                        <!-- <div class="col-auto d-lg-none">
-                            <a href="#" class="btn text-white search-btn">
-                                <div>
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                Search
-                            </a>
-                        </div> -->
                         <div class="col-auto d-none d-lg-inline">
                             <a href="about.html" class="btn text-white">
                                 About
@@ -218,7 +218,8 @@
 
     <!-- Main Content -->
     <main>
-        <section class="home-top-slider carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Slider -->
+        <section class="carousel slide" data-ride="carousel" data-interval="5000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -227,17 +228,38 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="#">
-                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+1" alt="First slide">
+                        <img class="d-block w-100 lazyload" 
+                            src="https://via.placeholder.com/280x118/ffffff" 
+                            data-sizes="auto"
+                            data-src="https://via.placeholder.com/880x371?text=Slider"
+                            data-srcset="https://via.placeholder.com/400x222?text=Slider 300w,
+                            https://via.placeholder.com/1080x455?text=Slider 600w,
+                            https://via.placeholder.com/1280x540?text=Slider 900w"
+                            alt="First slide">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#">
-                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+2" alt="Second slide">
+                        <img class="d-block w-100 lazyload" 
+                            src="https://via.placeholder.com/280x118/ffffff" 
+                            data-sizes="auto"
+                            data-src="https://via.placeholder.com/880x371?text=Slider"
+                            data-srcset="https://via.placeholder.com/400x222?text=Slider 300w,
+                            https://via.placeholder.com/1080x455?text=Slider 600w,
+                            https://via.placeholder.com/1280x540?text=Slider 900w"
+                            alt="Second slide">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#">
-                        <img class="d-block w-100" src="https://via.placeholder.com/1280x540?text=Slider+3" alt="Third slide">
+                        <img class="d-block w-100 lazyload" 
+                            src="https://via.placeholder.com/280x118/ffffff" 
+                            data-sizes="auto"
+                            data-src="https://via.placeholder.com/880x371?text=Slider"
+                            data-srcset="https://via.placeholder.com/400x222?text=Slider 300w,
+                            https://via.placeholder.com/1080x455?text=Slider 600w,
+                            https://via.placeholder.com/1280x540?text=Slider 900w"
+                            alt="Third slide">
                     </a>
                 </div>
             </div>
@@ -250,16 +272,51 @@
                 <span class="sr-only">Next</span>
             </a>
         </section>
+        <!-- End Slider -->
 
-        <section class="container home-sale-item mt-4">
-            <h4>Flash Sale</h4>
-            <div class="row border border-primary rounded-lg py-3 flex-nowrap overflow-hidden align-items-center position-relative">
-                <div class="col-5 col-lg-3">
+        <!-- Product Ads -->
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 my-1">
+                    <img 
+                        src="https://via.placeholder.com/200x111/ffffff" 
+                        data-sizes="auto"
+                        data-src="https://via.placeholder.com/600x333?text=Product+Ads"
+                        data-srcset="https://via.placeholder.com/400x222?text=Product+Ads 300w,
+                        https://via.placeholder.com/600x333?text=Product+Ads 600w,
+                        https://via.placeholder.com/800x444?text=Product+Ads 900w"
+                        alt="Ads" 
+                        class="w-100 lazyload">
+                </div>
+                <div class="col-md-6 my-1">
+                    <img 
+                        src="https://via.placeholder.com/200x111/ffffff" 
+                        data-sizes="auto"
+                        data-src="https://via.placeholder.com/600x333?text=Product+Ads"
+                        data-srcset="https://via.placeholder.com/400x222?text=Product+Ads 300w,
+                        https://via.placeholder.com/600x333?text=Product+Ads 600w,
+                        https://via.placeholder.com/800x444?text=Product+Ads 900w"
+                        alt="Ads" 
+                        class="w-100 lazyload">
+                </div>
+            </div>
+        </section>
+        <!-- End Product Ads -->
+
+        <section class="container mt-4 featured-section">
+            <h3 class="text-center mb-3">Flash Sale</h3>
+            <div class="row border border-primary rounded-lg featured-row">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+1"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -297,9 +354,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -308,12 +369,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+2"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -351,9 +417,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -362,12 +432,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+3"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -405,9 +480,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -416,12 +495,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+4"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -459,9 +543,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -470,12 +558,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+5"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -513,9 +606,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -524,12 +621,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
-                                <img class="card-img-top rounded-0" 
-                                    src="https://via.placeholder.com/800x800?text=Sale+Product+6"
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
                             <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
@@ -567,9 +669,13 @@
                                 </a>
                             </h5>
                             <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
                             <p class="card-text text-primary m-0">
                                 Rp20.000
                             </p>
+                            <small>Available: 10</small>
                             <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
                                 <button class="btn rounded-0 border-0 shadow-none">
                                     <i class="fas fa-heart"></i>
@@ -578,15 +684,131 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto position-absolute ml-n2 d-none d-lg-block">
-                    <button class="btn btn-primary rounded-circle">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
+                <div class="col-5 col-lg-3 my-3">
+                    <div class="card border-0 shadow-none rounded-0 product-card">
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
+                                <button type="button" class="btn btn-light rounded-pill mx-1">
+                                    <i class="fas fa-eye"></i>
+                                    Detail
+                                </button>
+                                <form action="cart.html">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill mx-1">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card-body p-0 pt-2 position-relative">
+                            <h5 class="card-title">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
+                                </a>
+                            </h5>
+                            <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
+                            <p class="card-text text-primary m-0">
+                                Rp20.000
+                            </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-auto position-absolute mr-n2 d-none d-lg-block">
-                    <button class="btn btn-primary rounded-circle">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="col-5 col-lg-3 my-3">
+                    <div class="card border-0 shadow-none rounded-0 product-card">
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Sale+Product"
+                                    data-srcset="https://via.placeholder.com/400?text=Sale+Product 300w,
+                                    https://via.placeholder.com/600?text=Sale+Product 600w,
+                                    https://via.placeholder.com/800?text=Sale+Product 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
+                                <button type="button" class="btn btn-light rounded-pill mx-1">
+                                    <i class="fas fa-eye"></i>
+                                    Detail
+                                </button>
+                                <form action="cart.html">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill mx-1">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card-body p-0 pt-2 position-relative">
+                            <h5 class="card-title">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
+                                </a>
+                            </h5>
+                            <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                33%
+                            </span>
+                            <p class="card-text text-primary m-0">
+                                Rp20.000
+                            </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -597,15 +819,12 @@
     <script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/scripts/root/variable.js"></script>
     <script src="./assets/scripts/root/function.js"></script>
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/root/index.js"></script>
+    <script src="./vendor/Lazysizes-5.3/lazysizes.min.js"></script>
     <script src="./assets/scripts/components/search-input/function.js"></script>
     <script src="./assets/scripts/components/search-input/event.js"></script>
     <script src="./assets/scripts/components/navbar/function.js"></script>
     <script src="./assets/scripts/components/navbar/event.js"></script>
     <script src="./assets/scripts/pages/index.js"></script>
-    <script src="./assets/scripts/pages/home/top-slider/function.js"></script>
-    <script src="./assets/scripts/pages/home/top-slider/event.js"></script>
-    <script src="./assets/scripts/pages/home/sale-item/function.js"></script>
-    <script src="./assets/scripts/pages/home/sale-item/event.js"></script>
 </body>
 </html>
