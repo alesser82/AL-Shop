@@ -9944,17 +9944,24 @@ nav .row .col-lg .row .col-auto .active {
   z-index: 1000;
 }
 
-.featured-section .row.border {
+.featured-row.border {
   border-width: 2px !important;
 }
 
 @media (max-width: 991px) {
-  .featured-section .featured-row {
+  .featured-section h3.text-center {
+    text-align: left !important;
+  }
+  .featured-row {
     flex-wrap: nowrap;
     overflow: scroll;
   }
-  .featured-section h3.text-center {
-    text-align: left !important;
+}
+
+@media (max-width: 700px) {
+  .featured-row.border {
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }
 
