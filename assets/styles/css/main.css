@@ -9988,4 +9988,12 @@ nav .row .col-lg .row .col-auto .active {
   z-index: 100;
   transition: .3s;
 }
+
+.product-card .card-title a.text-secondary {
+  transition: .3s;
+}
+
+.product-card .card-title a.text-secondary:hover {
+  color: #007bff !important;
+}
 /*# sourceMappingURL=main.css.map */
