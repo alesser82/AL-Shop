@@ -1,0 +1,27 @@
+{
+  "name": "al-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesser82/AL-Shop.git"
+  },
+  "author": "Muhammad Ramadhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesser82/AL-Shop/issues"
+  },
+  "homepage": "https://github.com/alesser82/AL-Shop#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "babel-cli": "^6.26.0"
+  },
+  "dependencies": {}
+}
