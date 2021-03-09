@@ -5,7 +5,11 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build": "babel dist/main.js -d lib",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -18,10 +22,19 @@
   },
   "homepage": "https://github.com/alesser82/AL-Shop#readme",
   "devDependencies": {
-    "@babel/cli": "^7.13.0",
-    "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.9",
-    "babel-cli": "^6.26.0"
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-cli": "^6.26.0",
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.1.14"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
 }
