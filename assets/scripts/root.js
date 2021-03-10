@@ -1,31 +1,34 @@
-let root = {
-    'widthScreen': 0,
-    'heightScreen': 0,
-    'function': {
-        'getScreenSize': function () {
-            root.widthScreen = screen.width;
-            root.heightScreen = screen.height;
-        },
-        'bottomSpaceHandler': function () {
-            if (root.widthScreen < 992) {
-                let paddingBottom = $('nav').height();
-                $('body').css('padding-bottom', `${paddingBottom}px`)
-            } else {
-                $('body').css('padding-bottom', `0px`)
-            }
-        },
-        'init': function () {
-            this.getScreenSize();
-            this.bottomSpaceHandler();
+const $ = require( "jquery" );
+
+let widthScreen = 0;
+let heightScreen = 0;
+
+const functions = {
+    getScreenSize: () => {
+        widthScreen = $(window).width;
+        heightScreen = $(window).height;
+    },
+    bottomSpaceHandler: () => {
+        if (widthScreen < 992) {
+            let paddingBottom = $('nav').height();
+            $('body').css('padding-bottom', `${paddingBottom}px`)
+        } else {
+            $('body').css('padding-bottom', `0px`)
         }
     },
-    'event': function () {
-
-        $(window).resize(function () {
-
-            root.function.init();
-
-        });
-
+    init: () => {
+        functions.getScreenSize();
+        functions.bottomSpaceHandler();
     }
 };
+
+const events = () => {
+    $(window).resize(function () {
+        functions.init();
+    });
+}
+
+exports.widthScreen = widthScreen;
+exports.heightScreen = heightScreen;
+exports.functions = functions;
+exports.events = events;

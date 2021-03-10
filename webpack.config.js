@@ -1,14 +1,47 @@
-const { assertSupportedNodeVersion } = require('../src/Engine');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const { merge } = require('webpack-merge');
+// const common = require('./webpack.common.js');
 
-module.exports = async () => {
-    assertSupportedNodeVersion();
+// module.exports = merge(common, {
+//     mode: 'production',
+// });
 
-    const mix = require('../src/Mix').primary;
+module.exports = {
+    entry: './src/main.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename : 'main.js',
+        clean: true
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+        title: 'Production',
+        }),
+    ],
+    module: {
+        rules: [
+        {
+            test: /\.(js)$/,
+            exclude: /node_modules/,
+            use: "babel-loader",
+        },
+        ],
+    },
+    mode: "production",
+}
 
-    require(mix.paths.mix());
+// module.exports = {
+//     entry: ['babel-polyfill', './src/main.js'],
 
-    await mix.installDependencies();
-    await mix.init();
+//     output: {
+//         filename: 'bundle.js'       
+//     },
 
-    return mix.build();
-};
+//     module: {
+//         loaders: [
+//         { test: /\.js?$/, loader: 'babel', }
+//         ]
+//     },
+//     mode: "production"
+// };

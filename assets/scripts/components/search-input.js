@@ -1,20 +1,25 @@
-let searchInput = {
-    'function': {
-        'placeholderHandler': function () {
-            if (root.widthScreen > 767) {
-                $('header input').attr('placeholder', 'Type about product ...');
-                return;
-            }
+const $ = require( "jquery" );
+const root = require('../root');
 
-            $('header input').attr('placeholder', 'Search...');
-        },
-        'init': async function () {
-            this.placeholderHandler();
+const functions = {
+    placeholderHandler: () => {
+        if (root.widthScreen > 767) {
+            $('header input').attr('placeholder', 'Type about product ...');
+            return;
         }
+
+        $('header input').attr('placeholder', 'Search...');
     },
-    'event': function () {
-        $(window).resize(function () {
-            searchInput.function.init();
-        });
+    init: async () => {
+        functions.placeholderHandler();
     }
 };
+
+const events = () => {
+    $(window).resize(function () {
+        functions.init();
+    });
+}
+
+exports.functions = functions;
+exports.events = events;
