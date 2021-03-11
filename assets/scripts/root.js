@@ -5,8 +5,8 @@ let heightScreen = 0;
 
 const functions = {
     getScreenSize: () => {
-        widthScreen = $(window).width;
-        heightScreen = $(window).height;
+        widthScreen = $(window).width();
+        heightScreen = $(window).height();
     },
     bottomSpaceHandler: () => {
         if (widthScreen < 992) {
