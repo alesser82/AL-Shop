@@ -1,7 +1,7 @@
 $richBlack: #001326;
 $secondary: $richBlack !default;
 
-$font-family-sans-serif: Poppins-Regular,
+$font-family-sans-serif: 'Poppins',
 Arial,
 sans-serif !default;
 
@@ -18,12 +18,3 @@ $container-max-widths: (sm: 540px,
     md: 720px,
     lg: 960px,
     xl: 1200px) !default;
-
-// Allows for customizing button radius independently from global border radius
-// $btn-border-radius: 0 !default;
-// $btn-border-radius-sm: 0 !default;
-// $btn-border-radius-lg: 0 !default;
-
-// $dropdown-border-radius: 0 !default;
-
-// $input-border-radius: 0 !default;

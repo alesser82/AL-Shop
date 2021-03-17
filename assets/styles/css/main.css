@@ -1,155 +1,3 @@
-@font-face {
-  font-family: 'Poppins-BlackItalic';
-  src: url("../../../vendor/Poppins/Poppins-BlackItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BlackItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BlackItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Black';
-  src: url("../../../vendor/Poppins/Poppins.ttf-Black");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Black';
-  src: url("../../../vendor/Poppins/Poppins-Black.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Black.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Bold';
-  src: url("../../../vendor/Poppins/Poppins-Bold.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Bold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Bold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Bold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Bold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Bold.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-BoldItalic';
-  src: url("../../../vendor/Poppins/Poppins-BoldItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-BoldItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-ExtraBold';
-  src: url("../../../vendor/Poppins/Poppins-ExtraBold.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBold.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-ExtraBoldItalic';
-  src: url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-ExtraLight';
-  src: url("../../../vendor/Poppins/Poppins-ExtraLight.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLight.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLight.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-ExtraLightItalic';
-  src: url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Italic';
-  src: url("../../../vendor/Poppins/Poppins-Italic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Italic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Italic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Italic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Italic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Italic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-LightItalic';
-  src: url("../../../vendor/Poppins/Poppins-LightItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-LightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-LightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-LightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-LightItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-LightItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Medium';
-  src: url("../../../vendor/Poppins/Poppins-Medium.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Medium.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Medium.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Medium.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Medium.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Medium.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-MediumItalic';
-  src: url("../../../vendor/Poppins/Poppins-MediumItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-MediumItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-MediumItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Regular';
-  src: url("../../../vendor/Poppins/Poppins-Regular.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Regular.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Regular.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Regular.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Regular.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Regular.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url("../../../vendor/Poppins/Poppins-SemiBold.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url("../../../vendor/Poppins/Poppins-SemiBold.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBold.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBoldItalic';
-  src: url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-Thin';
-  src: url("../../../vendor/Poppins/Poppins-Thin.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-Thin.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Thin.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Thin.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Thin.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-Thin.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Poppins-ThinItalic';
-  src: url("../../../vendor/Poppins/Poppins-ThinItalic.ttf");
-  /* IE9 Compat Modes */
-  src: url("../../../vendor/Poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ThinItalic.ttf") format("truetype"), url("../../../vendor/Poppins/Poppins-ThinItalic.ttf") format("truetype");
-  /* Legacy iOS */
-}
-
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -183,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: Poppins-Regular, Arial, sans-serif;
+  --font-family-sans-serif: "Poppins", Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -206,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Poppins-Regular, Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5944,7 +5792,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Poppins-Regular, Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6057,7 +5905,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Poppins-Regular, Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9839,7 +9687,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 767px) {
   :root {
-    font-size: 14px;
+    font-size: 13.5px;
   }
 }
 
@@ -9874,13 +9722,6 @@ header .btn:focus {
   }
   header form .row {
     height: 45px;
-  }
-  header form .row input {
-    padding: 0 1rem !important;
-  }
-  header form .row button {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
   }
   header form .row input:focus {
     box-shadow: none;
@@ -9933,18 +9774,11 @@ nav .row .col-lg .row .col-auto .active {
     overflow: scroll;
     z-index: 1000;
   }
-  nav.bg-secondary .row.justify-content-end {
-    justify-content: space-between !important;
-  }
-  nav.bg-secondary .row.justify-content-end a {
+  nav.bg-secondary .row.justify-content-lg-end a {
     color: #001326 !important;
   }
-  nav.bg-secondary .row.justify-content-end a.active {
+  nav.bg-secondary .row.justify-content-lg-end a.active {
     color: #007bff !important;
-  }
-  nav.bg-secondary .row.justify-content-end .col-auto {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
   }
 }
 
@@ -9959,11 +9793,7 @@ nav .row .col-lg .row .col-auto .active {
 }
 
 @media (max-width: 991px) {
-  .featured-section h3.text-center {
-    text-align: left !important;
-  }
   .featured-row {
-    flex-wrap: nowrap;
     overflow: scroll;
   }
 }

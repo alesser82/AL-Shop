@@ -38,9 +38,14 @@
     <meta name="msapplication-wide310x150logo" content="./assets/favicon/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="./assets/favicon/mstile-310x310.png" />
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="preload" as="style" href="./vendor/fontawesome-free-5/css/all.min.css" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="./assets/styles/css/main.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -86,11 +91,11 @@
                 <form class="col col-lg-6 my-2" method="GET" action="./product/search.html">
                     <div class="row bg-white rounded-pill overflow-hidden border">
                         <div class="p-0 col">
-                            <input type="text" class="form-control border-0 h-100 px-4" placeholder="Type about the product ..." aria-label="Search Product" aria-describedby="button-addon2">
+                            <input type="text" class="form-control border-0 h-100 px-4" required>
                         </div>
                         <div class="p-0 col-auto">
                             <button type="submit" 
-                                class="btn btn-primary border-0 rounded-pill h-100 px-5"
+                                class="btn btn-primary border-0 rounded-pill h-100 px-4 px-md-5"
                                 id="button-addon2">
                                 <span class="d-none d-md-inline">
                                     Search
@@ -151,13 +156,13 @@
                     </button>
                 </div>
                 <div class="col-12 col-lg">
-                    <div class="row justify-content-end flex-nowrap align-items-center">
-                        <div class="col-auto d-none d-lg-inline">
+                    <div class="row justify-content-between justify-content-lg-end flex-nowrap align-items-center">
+                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
                             <a href="index.html" class="btn text-white active">
                                 Home
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto px-1 px-lg-0">
                             <a href="shop.html" class="btn text-white">
                                 <div class="d-lg-none">
                                     <i class="fas fa-store"></i>
@@ -165,7 +170,7 @@
                                 Shop
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto px-1 px-lg-0">
                             <a href="shop.html" class="btn text-white">
                                 <div class="d-lg-none">
                                     <i class="fas fa-newspaper"></i>
@@ -173,7 +178,7 @@
                                 Blog
                             </a>
                         </div>
-                        <div class="col-auto d-lg-none">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none">
                             <a href="#" class="btn text-white search-btn">
                                 <div>
                                     <i class="fas fa-search"></i>
@@ -181,7 +186,7 @@
                                 Search
                             </a>
                         </div>
-                        <div class="col-auto d-lg-none">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none">
                             <a href="cart.html" class="btn text-white cart-btn">
                                 <div>
                                     <i class="fas fa-shopping-cart"></i>
@@ -192,7 +197,7 @@
                                 Cart
                             </a>
                         </div>
-                        <div class="col-auto d-lg-none">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none">
                             <a href="login.html" class="btn text-white">
                                 <div>
                                     <i class="fas fa-user"></i>
@@ -200,12 +205,12 @@
                                 Account
                             </a>
                         </div>
-                        <div class="col-auto d-none d-lg-inline">
+                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
                             <a href="about.html" class="btn text-white">
                                 About
                             </a>
                         </div>
-                        <div class="col-auto d-none d-lg-inline">
+                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
                             <a href="contact.html" class="btn text-white">
                                 Contact
                             </a>
@@ -275,9 +280,9 @@
         <!-- End Slider -->
 
         <!-- Product Ads -->
-        <section class="container mt-4">
-            <div class="row">
-                <div class="col-md-6 my-1 px-4 px-md-3 mx-2 mx-md-0">
+        <section class="container mt-4 overflow-auto">
+            <div class="row flex-nowrap flex-lg-wrap">
+                <div class="col-10 col-lg-6">
                     <a href="">
                         <img 
                             src="https://via.placeholder.com/200x111/ffffff" 
@@ -290,7 +295,7 @@
                             class="w-100 lazyload">
                     </a>
                 </div>
-                <div class="col-md-6 my-1 px-4 px-md-3 mx-2 mx-md-0">
+                <div class="col-10 col-lg-6">
                     <a href="">
                         <img 
                             src="https://via.placeholder.com/200x111/ffffff" 
@@ -309,8 +314,8 @@
 
         <!-- Flash Sale -->
         <section class="container mt-4 featured-section">
-            <h3 class="text-center mb-3">Flash Sale</h3>
-            <div class="row border border-primary rounded-lg featured-row">
+            <h3 class="text-left text-lg-center mb-3">Flash Sale</h3>
+            <div class="row border border-primary rounded-lg featured-row flex-nowrap flex-lg-wrap">
                 <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
@@ -821,8 +826,8 @@
 
         <!-- Best Seller -->
         <section class="container mt-4 featured-section">
-            <h3 class="text-center mb-2">Best Seller</h3>
-            <div class="row featured-row">
+            <h3 class="text-left text-lg-center mb-2">Best Seller</h3>
+            <div class="row featured-row flex-nowrap flex-lg-wrap">
                 <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
@@ -1073,8 +1078,8 @@
 
         <!-- Latest Blog Post -->
         <section class="container mt-4 featured-section">
-            <h3 class="text-center mb-2">Latest From Blog</h3>
-            <div class="row featured-row">
+            <h3 class="text-left text-lg-center mb-2">Latest From Blog</h3>
+            <div class="row featured-row flex-nowrap flex-lg-wrap">
                 <div class="col-5 col-lg-4 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <a href="blog-detail.html" class="text-decoration-none">
@@ -1156,7 +1161,7 @@
         <!-- Top Footer -->
         <div class="bg-light py-5">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-md-6 col-lg-3 order-1">
                         <img src="./assets/images/logo.svg" 
                                     data-src="./assets/images/logo.svg"
@@ -1164,17 +1169,17 @@
                                     class="lazyload"
                                     style="max-height: 50px;" />
                     </div>
-                    <div class="col-md-6 col-lg-3 order-3 order-md-2 mt-5 m-md-0">
+                    <div class="col-6 col-lg-3 order-3 order-md-2 mt-5 m-md-0">
                         <h5>
                             Categories
                         </h5>
                     </div>
-                    <div class="col-md-6 col-lg-3 order-5 order-lg-3 mt-5 mt-lg-0">
+                    <div class="col-6 col-lg-3 order-4 order-lg-3 mt-5 mt-lg-0">
                         <h5>
                             Information
                         </h5>
                     </div>
-                    <div class="col-md-6 col-lg-3 order-7 order-md-6 order-lg-4 mt-5 mt-lg-0">
+                    <div class="col-6 col-lg-3 order-7 order-md-6 order-lg-4 mt-5 mt-lg-0">
                         <h5>
                             Usefull Links
                         </h5>
@@ -1230,47 +1235,77 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 order-4 order-md-4 order-lg-6">
-                        <a href="product.html" class="text-decoration-none d-block text-dark my-1">
-                            Category Title
-                        </a>
-                        <a href="product.html" class="text-decoration-none d-block text-dark my-1">
-                            Category Title
-                        </a>
-                        <a href="product.html" class="text-decoration-none d-block text-dark my-1">
-                            Category Title
-                        </a>
-                        <a href="product.html" class="text-decoration-none d-block text-dark my-1">
-                            Category Title
-                        </a>
+                    <div class="col-6 col-lg-3 order-5 order-md-3 order-lg-6">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="product.html" class="text-decoration-none text-dark my-1">
+                                    Category Title
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="text-decoration-none text-dark my-1">
+                                    Category Title
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="text-decoration-none text-dark my-1">
+                                    Category Title
+                                </a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="text-decoration-none text-dark my-1">
+                                    Category Title
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 col-lg-3 order-6 order-md-7 order-lg-7">
-                        <a href="contact.html" class="text-decoration-none d-block text-dark my-1">
-                            Contact Us
-                        </a>
-                        <a href="privacy-policy.html" class="text-decoration-none d-block text-dark my-1">
-                            Privasy Policy
-                        </a>
-                        <a href="terms-condition.html" class="text-decoration-none d-block text-dark my-1">
-                            Terms & Condition
-                        </a>
-                        <a href="return-exchange.html" class="text-decoration-none d-block text-dark my-1">
-                            Return & Exchange
-                        </a>
+                    <div class="col-6 col-lg-3 order-6 order-md-7 order-lg-7">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="contact.html" class="text-decoration-none text-dark my-1">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html" class="text-decoration-none text-dark my-1">
+                                    Privasy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="terms-condition.html" class="text-decoration-none text-dark my-1">
+                                    Terms & Condition
+                                </a>
+                            </li>
+                            <li>
+                                <a href="return-exchange.html" class="text-decoration-none text-dark my-1">
+                                    Return & Exchange
+                                </a>
+                            </li>
+                        </ul>                        
                     </div>
                     <div class="col-md-6 col-lg-3 order-8">
-                        <a href="about.html" class="text-decoration-none d-block text-dark my-1">
-                            About Us
-                        </a>
-                        <a href="blog.html" class="text-decoration-none d-block text-dark my-1">
-                            Latest Post
-                        </a>
-                        <a href="order.html" class="text-decoration-none d-block text-dark my-1">
-                            My Order
-                        </a>
-                        <a href=".html" class="text-decoration-none d-block text-dark my-1">
-                            Account
-                        </a>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="about.html" class="text-decoration-none text-dark my-1">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="text-decoration-none text-dark my-1">
+                                    Latest Post
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order.html" class="text-decoration-none text-dark my-1">
+                                    My Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="text-decoration-none text-dark my-1">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>                        
                     </div>
                 </div>
             </div>
@@ -1305,18 +1340,14 @@
     </footer>
     
     <!-- Scripts -->
-    <!-- <script src="./vendor/jQuery-3.5.1/jquery.min.js"></script>
-    <script src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./vendor/Lazysizes-5.3/lazysizes.min.js"></script>
-    <script src="./assets/scripts/root.js"></script>
-    <script src="./assets/scripts/components/navbar.js"></script>
-    <script src="./assets/scripts/components/search-input.js"></script>
-    <script src="./assets/scripts/index.js"></script> -->
-    <!-- <script src="./assets/scripts/main.js"></script> -->
-    <!-- <script src="./dist/manifest.js"></script> -->
-    <!-- <script src="./dist/vendor.js"></script> -->
-    <!-- <script defer src="./dist/main.js"></script> -->
-    <!-- <script defer src="./dist/assets/main.js"></script> -->
-    <script defer src="./dist/main.js"></script>
+    <script defer src="./vendor/jQuery-3.5.1/jquery.min.js"></script>
+    <script defer src="./vendor/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./vendor/Lazysizes-5.3/lazysizes.min.js"></script>
+    <script defer src="./assets/scripts/dev/root.js"></script>
+    <script defer src="./assets/scripts/dev/components/navbar.js"></script>
+    <script defer src="./assets/scripts/dev/components/search-input.js"></script>
+    <script defer src="./assets/scripts/dev/index.js"></script>
+    <!-- <script src="./assets/scripts/test.min.js"></script> -->
+    <!-- <script src="./assets/scripts/app.js"></script> -->
 </body>
 </html>

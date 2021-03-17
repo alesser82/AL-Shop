@@ -4,16 +4,7 @@
 
 @media (max-width: 991px) { 
 
-    .featured-section {
-
-        h3.text-center {
-            text-align: left !important;
-        }
-        
-    }
-
     .featured-row {
-        flex-wrap: nowrap;
         overflow: scroll;
     }
 
