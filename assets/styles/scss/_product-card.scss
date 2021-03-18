@@ -26,6 +26,11 @@
 }
 
 .product-card {
+
+    .card-body {
+        font-size: 1rem;
+    }
+
     .row {
         .position-absolute {
             background-color: rgba($richBlack, .2);

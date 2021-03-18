@@ -82,20 +82,20 @@
 
         <!-- Bottom Header -->
         <div class="container bottom-header">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-3 col-md-2 col-lg-3 my-2">
-                    <a href="index.html" class="btn">
-                        <img src="./assets/images/logo.svg" alt="Logo">
+            <div class="row align-items-center justify-content-between py-3">
+                <div class="col-4 col-md-2 col-lg-3 h-100">
+                    <a href="index.html" class="btn p-0">
+                        <img src="https://via.placeholder.com/400x200?text=Logo" alt="Logo">
                     </a>
                 </div>
-                <form class="col col-lg-6 my-2" method="GET" action="./product/search.html">
-                    <div class="row bg-white rounded-pill overflow-hidden border">
+                <form class="col col-lg-6" method="GET" action="./product/search.html">
+                    <div class="row bg-white rounded-pill overflow-hidden border h-100">
                         <div class="p-0 col">
-                            <input type="text" class="form-control border-0 h-100 px-4" required>
+                            <input type="text" class="form-control border-0 px-4 py-3 h-100" required>
                         </div>
                         <div class="p-0 col-auto">
                             <button type="submit" 
-                                class="btn btn-primary border-0 rounded-pill h-100 px-4 px-md-5"
+                                class="btn btn-primary border-0 rounded-pill px-4 py-3 h-100 px-md-5"
                                 id="button-addon2">
                                 <span class="d-none d-md-inline">
                                     Search
@@ -105,11 +105,11 @@
                         </div>
                     </div>
                 </form>
-                <div class="col-auto col-md-2 col-lg-3 my-2 text-right user-menu">
+                <div class="col-auto col-md-2 col-lg-3 text-right user-menu h-100">
                     <a href="login.html" class="btn d-none d-lg-inline">
                         <i class="fas fa-user"></i>
                     </a>
-                    <a href="wishlist.html" class="btn">
+                    <a href="wishlist.html" class="btn p-0 px-lg-2">
                         <i class="fas fa-heart"></i>
                         <span class="badge badge-primary">
                             0
@@ -170,7 +170,7 @@
                                 Shop
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0">
+                        <div class="col-auto px-1 px-lg-0 d-none d-lg-block">
                             <a href="shop.html" class="btn text-white">
                                 <div class="d-lg-none">
                                     <i class="fas fa-newspaper"></i>
@@ -315,8 +315,8 @@
         <!-- Flash Sale -->
         <section class="container mt-4 featured-section">
             <h3 class="text-left text-lg-center mb-3">Flash Sale</h3>
-            <div class="row border border-primary rounded-lg featured-row flex-nowrap flex-lg-wrap">
-                <div class="col-5 col-lg-3 my-3">
+            <div class="row border border-primary rounded-lg featured-row flex-nowrap flex-lg-wrap px-1 p-lg-0">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -329,15 +329,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -358,7 +358,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -392,15 +392,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -421,7 +421,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -442,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -455,15 +455,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -484,7 +484,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -505,7 +505,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -518,15 +518,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -547,7 +547,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -568,7 +568,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -581,15 +581,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -610,7 +610,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -631,7 +631,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -644,15 +644,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -673,7 +673,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -694,7 +694,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -707,15 +707,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -736,7 +736,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -757,7 +757,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-3 my-3">
+                <div class="col-5 col-lg-3 my-3 px-2 px-md-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
                         <div class="row m-0 position-relative">
                             <div class="col-12 p-0">
@@ -770,15 +770,15 @@
                                     https://via.placeholder.com/800?text=Sale+Product 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -799,7 +799,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -841,15 +841,15 @@
                                     https://via.placeholder.com/800?text=Best+Seller 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -870,12 +870,12 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
                             </h5>
-                            <p class="card-text m-0">
+                            <p class="card-text m-0 text-primary">
                                 Rp20.000
                             </p>
                             <small>Available: 10</small>
@@ -900,15 +900,15 @@
                                     https://via.placeholder.com/800?text=Best+Seller 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -929,7 +929,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -963,15 +963,15 @@
                                     https://via.placeholder.com/800?text=Best+Seller 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -992,12 +992,12 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
                             </h5>
-                            <p class="card-text m-0">
+                            <p class="card-text m-0 text-primary">
                                 Rp20.000
                             </p>
                             <small>Available: 10</small>
@@ -1022,15 +1022,15 @@
                                     https://via.placeholder.com/800?text=Best+Seller 900w"
                                     alt="Sale Product">
                             </div>
-                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none">
-                                <button type="button" class="btn btn-light rounded-pill mx-1">
-                                    <i class="fas fa-eye"></i>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
                                     View
                                 </button>
-                                <form action="cart.html">
+                                <form action="cart.html" class="m-1 w-75">
                                     <button type="submit"
-                                        class="btn btn-primary rounded-pill mx-1">
-                                        <i class="fas fa-shopping-cart"></i>
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
                                         Add
                                     </button>
                                 </form>
@@ -1051,7 +1051,7 @@
                             </form>
                         </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title">
+                            <h5 class="card-title font-weight-normal mb-1">
                                 <a href="product-detail.html" class="text-secondary text-decoration-none">
                                     Product Item
                                 </a>
@@ -1093,7 +1093,7 @@
                                 alt="Post Cover">
                         </a>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-1">
+                            <h5 class="card-title my-2">
                                 <a href="blog-detail.html" class="text-secondary text-decoration-none">
                                     Post Title
                                 </a>
@@ -1117,7 +1117,7 @@
                                 alt="Post Cover">
                         </a>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-1">
+                            <h5 class="card-title my-2">
                                 <a href="blog-detail.html" class="text-secondary text-decoration-none">
                                     Post Title
                                 </a>
@@ -1141,7 +1141,7 @@
                                 alt="Post Cover">
                         </a>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-1">
+                            <h5 class="card-title my-2">
                                 <a href="blog-detail.html" class="text-secondary text-decoration-none">
                                     Post Title
                                 </a>

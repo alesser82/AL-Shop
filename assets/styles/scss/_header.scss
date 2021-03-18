@@ -1,6 +1,7 @@
 header {
     img {
-        max-height: 45px;
+        max-height: 60px;
+        width: auto !important;
     }
 
     form {
@@ -33,12 +34,11 @@ header {
     header {
         img {
             max-height: 40px;
-            width: 100%;
+            width: 100% !important;
         }
 
         form {
             .row {
-                height: 45px;
 
                 input {
                     &:focus {
