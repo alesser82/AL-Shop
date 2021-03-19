@@ -1,4 +1,5 @@
 let navbar = {
+    element: {},
     functions: {
         displayCategoryList: () => {
             $('nav button .position-absolute').fadeIn(300);
@@ -16,6 +17,7 @@ let navbar = {
             });
         },
         init: () => {
+            navbar.element = $('nav');
             navbar.functions.hideCategoryList();
         }
     },

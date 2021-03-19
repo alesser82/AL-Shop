@@ -9,4 +9,7 @@ $(document).ready( () => {
     navbar.functions.init();
     navbar.events();
 
+    toTopButton.functions.create();
+    toTopButton.events();
+
 });

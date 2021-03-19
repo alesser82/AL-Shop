@@ -83,13 +83,13 @@
         <!-- Bottom Header -->
         <div class="container bottom-header">
             <div class="row align-items-center justify-content-between py-3">
-                <div class="col-4 col-md-2 col-lg-3 h-100">
+                <div class="col-auto col-lg-3 h-100">
                     <a href="index.html" class="btn p-0">
                         <img src="https://via.placeholder.com/400x200?text=Logo" alt="Logo">
                     </a>
                 </div>
                 <form class="col col-lg-6" method="GET" action="./product/search.html">
-                    <div class="row bg-white rounded-pill overflow-hidden border h-100">
+                    <div class="row bg-white rounded-pill overflow-hidden border h-100 m-0 m-lg-n1">
                         <div class="p-0 col">
                             <input type="text" class="form-control border-0 px-4 py-3 h-100" required>
                         </div>
@@ -105,7 +105,11 @@
                         </div>
                     </div>
                 </form>
-                <div class="col-auto col-md-2 col-lg-3 text-right user-menu h-100">
+                <div class="col-auto col-md-2 col-lg-3 text-right user-menu h-100 d-none d-lg-block">
+                    <button type="button" 
+                        class="btn d-lg-none">
+                        <i class="fas fa-search"></i>
+                    </button>
                     <a href="login.html" class="btn d-none d-lg-inline">
                         <i class="fas fa-user"></i>
                     </a>
@@ -157,12 +161,12 @@
                 </div>
                 <div class="col-12 col-lg">
                     <div class="row justify-content-between justify-content-lg-end flex-nowrap align-items-center">
-                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
+                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline order-1">
                             <a href="index.html" class="btn text-white active">
                                 Home
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0">
+                        <div class="col-auto px-1 px-lg-0 order-1 order-lg-2">
                             <a href="shop.html" class="btn text-white">
                                 <div class="d-lg-none">
                                     <i class="fas fa-store"></i>
@@ -170,23 +174,18 @@
                                 Shop
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0 d-none d-lg-block">
-                            <a href="shop.html" class="btn text-white">
-                                <div class="d-lg-none">
-                                    <i class="fas fa-newspaper"></i>
-                                </div>
-                                Blog
-                            </a>
-                        </div>
-                        <div class="col-auto px-1 px-lg-0 d-lg-none">
-                            <a href="#" class="btn text-white search-btn">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none order-2 order-md-4">
+                            <a href="wishlist.html" class="btn text-white wishlist-btn">
                                 <div>
-                                    <i class="fas fa-search"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <span class="badge badge-primary pb-0">
+                                        0
+                                    </span>
                                 </div>
-                                Search
+                                Wishlist
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0 d-lg-none">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none order-3 order-md-4">
                             <a href="cart.html" class="btn text-white cart-btn">
                                 <div>
                                     <i class="fas fa-shopping-cart"></i>
@@ -197,7 +196,7 @@
                                 Cart
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0 d-lg-none">
+                        <div class="col-auto px-1 px-lg-0 d-lg-none order-4 order-md-5">
                             <a href="login.html" class="btn text-white">
                                 <div>
                                     <i class="fas fa-user"></i>
@@ -205,13 +204,19 @@
                                 Account
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
+                        <div class="col-auto px-1 px-lg-0 order-2 order-lg-3 d-none d-md-block">
                             <a href="about.html" class="btn text-white">
-                                About
+                                <div class="d-lg-none">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                About Us
                             </a>
                         </div>
-                        <div class="col-auto px-1 px-lg-0 d-none d-lg-inline">
+                        <div class="col-auto px-1 px-lg-0 d-none order-md-3 order-lg-4 d-md-block">
                             <a href="contact.html" class="btn text-white">
+                                <div class="d-lg-none">
+                                    <i class="fas fa-phone"></i>
+                                </div>
                                 Contact
                             </a>
                         </div>
@@ -1076,85 +1081,258 @@
         </section>
         <!-- End Best Seller -->
 
-        <!-- Latest Blog Post -->
-        <section class="container mt-4 featured-section">
-            <h3 class="text-left text-lg-center mb-2">Latest From Blog</h3>
+        <!-- Popular Item -->
+        <section class="container mt-2 featured-section">
+            <h3 class="text-left text-lg-center mb-2">Popular Item</h3>
             <div class="row featured-row flex-nowrap flex-lg-wrap">
-                <div class="col-5 col-lg-4 my-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
-                        <a href="blog-detail.html" class="text-decoration-none">
-                            <img class="card-img-top rounded-0 lazyload" 
-                                src="https://via.placeholder.com/200x115/ffffff"
-                                data-sizes="auto"
-                                data-src="https://via.placeholder.com/600x346?text=Blog"
-                                data-srcset="https://via.placeholder.com/360x208?text=Blog 300w,
-                                https://via.placeholder.com/600x346?text=Blog 600w,
-                                https://via.placeholder.com/800x462?text=Blog 900w"
-                                alt="Post Cover">
-                        </a>
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Popular+Item"
+                                    data-srcset="https://via.placeholder.com/400?text=Popular+Item 300w,
+                                    https://via.placeholder.com/600?text=Popular+Item 600w,
+                                    https://via.placeholder.com/800?text=Popular+Item 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
+                                    View
+                                </button>
+                                <form action="cart.html" class="m-1 w-75">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-2">
-                                <a href="blog-detail.html" class="text-secondary text-decoration-none">
-                                    Post Title
+                            <h5 class="card-title font-weight-normal mb-1">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
                                 </a>
                             </h5>
-                            <p class="card-text m-0">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod maxime eum consequatur possimus. Voluptatum, dicta itaque? Impedit, dolorem quis...
+                            <p class="card-text m-0 text-primary">
+                                Rp20.000
                             </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-4 my-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
-                        <a href="blog-detail.html" class="text-decoration-none">
-                            <img class="card-img-top rounded-0 lazyload" 
-                                src="https://via.placeholder.com/200x115/ffffff"
-                                data-sizes="auto"
-                                data-src="https://via.placeholder.com/600x346?text=Blog"
-                                data-srcset="https://via.placeholder.com/360x208?text=Blog 300w,
-                                https://via.placeholder.com/600x346?text=Blog 600w,
-                                https://via.placeholder.com/800x462?text=Blog 900w"
-                                alt="Post Cover">
-                        </a>
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Popular+Item"
+                                    data-srcset="https://via.placeholder.com/400?text=Popular+Item 300w,
+                                    https://via.placeholder.com/600?text=Popular+Item 600w,
+                                    https://via.placeholder.com/800?text=Popular+Item 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
+                                    View
+                                </button>
+                                <form action="cart.html" class="m-1 w-75">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-2">
-                                <a href="blog-detail.html" class="text-secondary text-decoration-none">
-                                    Post Title
+                            <h5 class="card-title font-weight-normal mb-1">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
                                 </a>
                             </h5>
-                            <p class="card-text m-0">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod maxime eum consequatur possimus. Voluptatum, dicta itaque? Impedit, dolorem quis...
+                            <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                -33%
+                            </span>
+                            <p class="card-text text-primary m-0">
+                                Rp20.000
                             </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-5 col-lg-4 my-3">
+                <div class="col-5 col-lg-3 my-3">
                     <div class="card border-0 shadow-none rounded-0 product-card">
-                        <a href="blog-detail.html" class="text-decoration-none">
-                            <img class="card-img-top rounded-0 lazyload" 
-                                src="https://via.placeholder.com/200x115/ffffff"
-                                data-sizes="auto"
-                                data-src="https://via.placeholder.com/600x346?text=Blog"
-                                data-srcset="https://via.placeholder.com/360x208?text=Blog 300w,
-                                https://via.placeholder.com/600x346?text=Blog 600w,
-                                https://via.placeholder.com/800x462?text=Blog 900w"
-                                alt="Post Cover">
-                        </a>
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Popular+Item"
+                                    data-srcset="https://via.placeholder.com/400?text=Popular+Item 300w,
+                                    https://via.placeholder.com/600?text=Popular+Item 600w,
+                                    https://via.placeholder.com/800?text=Popular+Item 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
+                                    View
+                                </button>
+                                <form action="cart.html" class="m-1 w-75">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
                         <div class="card-body p-0 pt-2 position-relative">
-                            <h5 class="card-title my-2">
-                                <a href="blog-detail.html" class="text-secondary text-decoration-none">
-                                    Post Title
+                            <h5 class="card-title font-weight-normal mb-1">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
                                 </a>
                             </h5>
-                            <p class="card-text m-0">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quod maxime eum consequatur possimus. Voluptatum, dicta itaque? Impedit, dolorem quis...
+                            <p class="card-text m-0 text-primary">
+                                Rp20.000
                             </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-3 my-3">
+                    <div class="card border-0 shadow-none rounded-0 product-card">
+                        <div class="row m-0 position-relative">
+                            <div class="col-12 p-0">
+                                <img class="card-img-top rounded-0 lazyload" 
+                                    src="https://via.placeholder.com/200/ffffff"
+                                    data-sizes="auto"
+                                    data-src="https://via.placeholder.com/600?text=Popular+Item"
+                                    data-srcset="https://via.placeholder.com/400?text=Popular+Item 300w,
+                                    https://via.placeholder.com/600?text=Popular+Item 600w,
+                                    https://via.placeholder.com/800?text=Popular+Item 900w"
+                                    alt="Sale Product">
+                            </div>
+                            <a href="product-detail.html" class="col-12 position-absolute d-flex align-items-center justify-content-center h-100 text-decoration-none flex-column">
+                                <button type="button" class="btn btn-light rounded-pill m-1 w-75">
+                                    <i class="mr-1 fas fa-eye"></i>
+                                    View
+                                </button>
+                                <form action="cart.html" class="m-1 w-75">
+                                    <button type="submit"
+                                        class="btn btn-primary rounded-pill w-100">
+                                        <i class="mr-1 fas fa-shopping-cart"></i>
+                                        Add
+                                    </button>
+                                </form>
+                            </a>
+                        </div>
+                        <div class="d-lg-none pt-2 d-flex">
+                            <form action="cart.html" class="d-inline">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                            <form action="wishlist.html" class="d-inline ml-3">
+                                <button type="submit"
+                                        class="btn btn-sm p-0">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="card-body p-0 pt-2 position-relative">
+                            <h5 class="card-title font-weight-normal mb-1">
+                                <a href="product-detail.html" class="text-secondary text-decoration-none">
+                                    Product Item
+                                </a>
+                            </h5>
+                            <del class="text-secondary">Rp30.000</del>
+                            <span class="badge badge-danger pb-0">
+                                -33%
+                            </span>
+                            <p class="card-text text-primary m-0">
+                                Rp20.000
+                            </p>
+                            <small>Available: 10</small>
+                            <form action="wishlist.html" class="position-absolute d-none d-lg-inline">
+                                <button class="btn rounded-0 border-0 shadow-none">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Latest Blog Post -->
+        <!-- End Popular Item -->
+
     </main>
 
     <footer class="mt-3">
@@ -1291,8 +1469,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="blog.html" class="text-decoration-none text-dark my-1">
-                                    Latest Post
+                                <a href="confirmation.html" class="text-decoration-none text-dark my-1">
+                                    Confirmation
                                 </a>
                             </li>
                             <li>
@@ -1330,9 +1508,6 @@
                         <a href="contact.html" class="text-decoration-none text-white mx-2">
                             Contact Us
                         </a>
-                        <a href="blog.html" class="text-decoration-none text-white mx-2">
-                            Blog
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1346,6 +1521,7 @@
     <script defer src="./assets/scripts/dev/root.js"></script>
     <script defer src="./assets/scripts/dev/components/navbar.js"></script>
     <script defer src="./assets/scripts/dev/components/search-input.js"></script>
+    <script defer src="./assets/scripts/dev/components/to-top-button.js"></script>
     <script defer src="./assets/scripts/dev/app.js"></script>
     <!-- <script src="./assets/scripts/test.min.js"></script> -->
     <!-- <script src="./assets/scripts/app.js"></script> -->
